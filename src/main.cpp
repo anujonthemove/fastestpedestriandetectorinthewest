@@ -10,7 +10,7 @@ int main(int argc, char **argv)
     namedWindow("image",cv::WINDOW_NORMAL);
 
     fpdw::detector::FPDWDetector detector(argv[1], 50.);
-    VideoCapture cap(0); // open the default camera
+    VideoCapture cap(1); // open the default camera
     if(!cap.isOpened())  // check if we succeeded
         return -1;
 
